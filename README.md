@@ -1,3 +1,3 @@
-# Projeto Spotify with React
+# Wrapper Spotify with React
 
-Create template for Spotify with API integration using React.
+Create a Wrapper to work with the [Spotify Web API](https://developer.spotify.com).
