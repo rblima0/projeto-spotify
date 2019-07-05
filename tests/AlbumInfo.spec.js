@@ -1,11 +1,11 @@
 import 'jsdom-global/register';
 import { expect } from 'chai';
 
- import renderAlbumInfo from '../src/AlbumInfo';
+import renderAlbumInfo from '../src/AlbumInfo';
 
- describe('AlbumInfo Suite Tests', () => {
+describe('AlbumInfo Suite Tests', () => {
 
-   const data = {
+  const data = {
     "album_type" : "album",
     "artists" : [ {
       "name" : "Incubus",
@@ -31,17 +31,22 @@ import { expect } from 'chai';
     }
   };
 
-   const markup = `
+  const markup = `
     <img class="album-image" src="https://i.scdn.co/image/59a536f0bf0ddaa427e4c732a061c33fe7578757" alt="The Essential Incubus">
     <p class="album-title">The Essential Incubus</p>
     <p class="album-artist">Incubus</p>
     <p class="album-counter">18 Músicas</p>
   `;
 
-   it('should create and append the markup given a correct data', () => {
+  it('should create and append the markup given a correct data', () => {
     const element = document.createElement('div');
     renderAlbumInfo(data, element);
 
      expect(element.innerHTML).to.be.eql(markup);
   });
+
+  it('should return album data', () => {
+    const element2 = document.createElement('div');
+    expect(renderAlbumInfo(data, element2)).to.be.eql(data);
+  })
 });
