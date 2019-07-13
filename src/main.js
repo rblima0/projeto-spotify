@@ -1,18 +1,8 @@
-import spotify from './Spotify';
-import renderAlbumInfo from './AlbumInfo';
-import renderAlbumTracks from './AlbumTracks';
 import searchEnterTrigger from './SearchTrigger';
+import selectAlbumTrigger from './SelectAlbumTrigger'
 
 searchEnterTrigger();
-
-const albumTracks = document.getElementById('album-tracks');
-const albumInfo = document.getElementById('album-info');
-
-const album = spotify.album.getAlbum('64lYVfx8NrXctVRKwGbPWB');
-
-album
-  .then(data => renderAlbumInfo(data, albumInfo))
-  .then(data => renderAlbumTracks(data.tracks.items, albumTracks));
+selectAlbumTrigger();
 
 /* export const search = () => {};
 export const searchAlbums = () => {};
