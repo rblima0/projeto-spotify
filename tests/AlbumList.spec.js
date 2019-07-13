@@ -2,7 +2,7 @@ import 'jsdom-global/register';
 import { expect } from 'chai';
 import renderAlbums from '../src/AlbumList';
 
- describe('AlbumList Suite Test', () => {
+ describe('AlbumList Suite Tests', () => {
   it('should exist', () => {
     expect(renderAlbums).to.exist;
   });

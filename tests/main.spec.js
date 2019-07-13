@@ -1,4 +1,4 @@
-import chai, { expect } from 'chai';
+/* import chai, { expect } from 'chai';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
 
@@ -8,7 +8,7 @@ chai.use(sinonChai);
 
 global.fetch = require('node-fetch');
 
-describe('Spotify Wrapper', () => {
+describe.skip('Spotify Wrapper', () => {
 
   describe('Smoke Tests', () => {
 
@@ -34,7 +34,7 @@ describe('Spotify Wrapper', () => {
 
   });
 
-  describe.skip('Generic Search', () => {
+  describe('Generic Search', () => {
     let fetchStub
 
     beforeEach(function() {
@@ -62,5 +62,12 @@ describe('Spotify Wrapper', () => {
     });
 
   });
+
+});
+ */
+
+import { expect } from 'chai';
+
+describe('Main Suite Tests', () => {
 
 });
