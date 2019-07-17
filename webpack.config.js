@@ -8,10 +8,10 @@ const webpack = require('webpack');
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './example'),
+    path: path.resolve(__dirname, './front'),
   },
   devServer: {
-    contentBase: path.resolve(__dirname, './example'),
+    contentBase: path.resolve(__dirname, './front'),
   },
   module: {
     rules: [
